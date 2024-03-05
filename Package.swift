@@ -13,15 +13,18 @@ let package = Package(
             targets: ["MicroApp1"]),
     ],
     dependencies: [
-        .package(path: "Navigation"),
-        .package(path: "CommonUI"),
+        .package(url: "https://github.com/AndrewBrehmAtDialexa/Navigation", from: "1.0.1"),
+        .package(url: "https://github.com/AndrewBrehmAtDialexa/CommonUI", from: "1.0.1"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
             name: "MicroApp1",
-            dependencies: ["Navigation", "CommonUI"]),
+            dependencies: [
+                .product(name: "Navigation", package: "Navigation"),
+                .product(name: "CommonUI", package: "CommonUI"),
+            ]),
         .testTarget(
             name: "MicroApp1Tests",
             dependencies: ["MicroApp1"]),
