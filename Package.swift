@@ -24,7 +24,8 @@ let package = Package(
             dependencies: [
                 .product(name: "Navigation", package: "Navigation"),
                 .product(name: "CommonUI", package: "CommonUI"),
-            ]),
+            ],
+            path: "MicroApp1/Sources"),
         .testTarget(
             name: "MicroApp1Tests",
             dependencies: ["MicroApp1"]),
