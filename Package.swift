@@ -13,8 +13,8 @@ let package = Package(
             targets: ["MicroApp1"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/AndrewBrehmAtDialexa/Navigation", from: "1.0.1"),
-        .package(url: "https://github.com/AndrewBrehmAtDialexa/CommonUI", from: "1.0.1"),
+        .package(url: "https://github.com/AndrewBrehmAtDialexa/Navigation", from: "1.0.2"),
+        .package(url: "https://github.com/AndrewBrehmAtDialexa/CommonUI", from: "1.0.2"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.

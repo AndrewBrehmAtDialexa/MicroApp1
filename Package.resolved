@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "commonui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AndrewBrehmAtDialexa/CommonUI",
+      "state" : {
+        "revision" : "ddfac9b9fb0e506a25bd234f6e2f679d38d67a3b",
+        "version" : "1.0.2"
+      }
+    },
+    {
+      "identity" : "navigation",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AndrewBrehmAtDialexa/Navigation",
+      "state" : {
+        "revision" : "77d4647a73863a499c164697a648cb70f666b4cc",
+        "version" : "1.0.2"
+      }
+    }
+  ],
+  "version" : 2
+}
